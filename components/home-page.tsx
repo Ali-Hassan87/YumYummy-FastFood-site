@@ -52,11 +52,11 @@ export function HomePage() {
 
   <div>
     <b>Support</b>
-    <a href="mailto:hello@yumyummy.demo">
-      hello@yumyummy.demo
+    <a href="mailto:silverloftofficial@gmail.com">
+      silverloftofficial@gmail.com
     </a>
     <span>
-      Demo practice project
+      Its Time to get your cravings satisfied. Order now and experience the ultimate fast food adventure!
     </span>
   </div>
 </footer>

@@ -4,7 +4,7 @@ import { z } from 'zod';
 const orderSchema = z.object({
   customer: z.object({ name: z.string().min(2), phone: z.string().min(7), address: z.string().min(8) }),
   items: z.array(z.object({ id: z.string(), quantity: z.number().int().positive() })).min(1),
-  payment: z.enum(['cod', 'demo-card', 'demo-wallet']),
+  payment: z.enum(['cod', 'paypal-card', 'online-wallet']),
   total: z.number().nonnegative(),
 });
 
@@ -26,6 +26,6 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ ok: true, order });
   } catch {
-    return NextResponse.json({ ok: false, message: 'Could not place demo order.' }, { status: 500 });
+    return NextResponse.json({ ok: false, message: 'Could not place order.' }, { status: 500 });
   }
 }
