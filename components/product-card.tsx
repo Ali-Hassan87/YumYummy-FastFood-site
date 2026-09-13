@@ -40,6 +40,7 @@ export function ProductCard({
             sizes="(max-width: 700px) 50vw, (max-width: 1000px) 50vw, 33vw"
             className="product-image"
             priority={false}
+            unoptimized
           />
 
           <div className="product-image-overlay" />
